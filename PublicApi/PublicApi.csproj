@@ -21,9 +21,11 @@
     <None Remove="Models\" />
     <None Remove="JwtHelpers\" />
     <None Remove="Microsoft.AspNetCore.SignalR" />
+    <None Remove="Hub\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
     <Folder Include="JwtHelpers\" />
+    <Folder Include="Hub\" />
   </ItemGroup>
 </Project>
