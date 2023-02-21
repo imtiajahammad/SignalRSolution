@@ -17,5 +17,11 @@
     <None Remove="Microsoft.AspNetCore.Authentication.JwtBearer" />
     <None Remove="Microsoft.IdentityModel.JsonWebTokens" />
     <None Remove="System.IdentityModel.Tokens.Jwt" />
+    <None Remove="Models\" />
+    <None Remove="JwtHelpers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="JwtHelpers\" />
   </ItemGroup>
 </Project>
