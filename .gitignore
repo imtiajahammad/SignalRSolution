@@ -403,3 +403,9 @@ ASALocalRun/
 
 # Local History for Visual Studio
 .localhistory/
+
+
+# cache files from angular application
+SignalRClient/.angular/cache/
+# dist files from angular application
+SignalRClient/dist/
