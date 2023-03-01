@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.SignalR;
 
 namespace PublicApi.Hub
 {
-    [Authorize]
+    [Authorize(AuthenticationSchemes = Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme)]
     public class MessageHub : Hub<IMessageHubClient>
     {
         public async Task SendOffersToUser(List<string> message)

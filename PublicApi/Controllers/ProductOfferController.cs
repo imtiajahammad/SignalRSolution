@@ -11,7 +11,7 @@ using PublicApi.Hub;
 
 namespace PublicApi.Controllers
 {
-    [Authorize]
+    [Authorize(AuthenticationSchemes = Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme)]
     [Route("api/[controller]")]
     public class ProductOfferController : Controller
     {
@@ -31,7 +31,7 @@ namespace PublicApi.Controllers
             offers.Add("25% Off on Samsung Smart TV");
             messageHub.Clients.All.SendOffersToUser(offers);
             messageHub.Clients.All.SendCustomMessage("this is a moja custom message");
-            messageHub.Clients.User("Admin").BroadcastToUser("message to 1212");
+            //messageHub.Clients.User("Admin").BroadcastToUser("message to 1212");
             try
             {
                 messageHub.Clients.User("Admin").SendIndividual("to admin user");
